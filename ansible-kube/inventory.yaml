@@ -1,0 +1,13 @@
+
+[masters]
+kubemaster.kubelab.com
+
+[etcd]
+kubemaster.kubelab.com
+
+[nodes]
+kubenode01.kubelab.com
+kubenode02.kubelab.com
+kubenode03.kubelab.com
+kubenode04.kubelab.com
+kubenode05.kubelab.com

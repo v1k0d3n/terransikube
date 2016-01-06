@@ -1,0 +1,8 @@
+[sgallagh-cockpit-preview]
+name=Copr repo for cockpit-preview owned by sgallagh
+baseurl=https://copr-be.cloud.fedoraproject.org/results/sgallagh/cockpit-preview/fedora-$releasever-$basearch/
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/sgallagh/cockpit-preview/pubkey.gpg
+enabled=1
+enabled_metadata=1

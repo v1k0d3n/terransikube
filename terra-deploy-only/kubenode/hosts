@@ -1,0 +1,16 @@
+# kubelab Kubernetes Hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+#
+# Kubernetes Hub
+#192.168.70.83 yourhub.domain.com microhub
+#
+# Kubernetes Master
+10.8.80.10 kubemaster.kubelab.com kubemaster
+#
+# Kubernetes Minions
+10.8.80.11 kubenode01.kubelab.com kubenode01
+10.8.80.12 kubenode02.kubelab.com kubenode02
+10.8.80.13 kubenode03.kubelab.com kubenode03
+10.8.80.14 kubenode04.kubelab.com kubenode04
+10.8.80.15 kubenode05.kubelab.com kubenode05
