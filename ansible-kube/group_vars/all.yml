@@ -19,7 +19,7 @@ ansible_ssh_user: fedora
 # password for the ansible_ssh_user. If this is unset you will need to set up
 # ssh keys so a password is not needed.
 #ansible_ssh_pass: password
-ansible_ssh_private_key_file: /Users/bjozsa/.ssh/terraform
+ansible_ssh_private_key_file: ~/.ssh/terraform
 
 # If a password is needed to sudo to root that password must be set here
 #ansible_sudo_pass: password
