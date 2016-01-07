@@ -1,3 +1,5 @@
+[![Docker Repository on Quay](https://quay.io/repository/v1k0d3n/consul/status "Docker Repository on Quay")](https://quay.io/repository/v1k0d3n/fed-dev)
+
 This whole repo should be loaded within a fed-dev container located at: https://quay.io/repository/v1k0d3n/fed-dev
 
 ### How to use Terransikube:
