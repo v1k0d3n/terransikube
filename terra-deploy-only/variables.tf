@@ -40,6 +40,11 @@ variable "ssh_key_file" {
 variable "ssh_key_file_pub" {
     default = "~/.ssh/id_rsa.pub"
 }
+
+# Name you want to provide for your key in Openstack. Using a variable to make deployments easier if you're duplicating keys.
+variable "ssh_key_name" {
+    default = "deployment-key"
+}
 variable "ssh_key_hash" {
     default = "<additional-key-hash>"
 }

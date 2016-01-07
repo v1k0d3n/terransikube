@@ -9,6 +9,6 @@
 #
 /* The Terraform Key-Pair */
 resource "openstack_compute_keypair_v2" "terraform-key" {
-  name = "terraform-key"
+  name = "${var.ssh_key_name}"
   public_key = "${file("${var.ssh_key_file}.pub")}"
 }
