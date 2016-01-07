@@ -9,6 +9,11 @@ This whole repo should be loaded within a fed-dev container located at: https://
 2. Clone this directory:
   * `git clone `
 3. Create ssh keys in ~/.ssh/
+   ````
+   [root@fed-dev]# ssh-keygen -t rsa -b 4096 -C "user@domain.com"
+   Enter file in which to save the key (/root/.ssh/id_rsa): /root/.ssh/terraform
+   ````
+   *NOTE: I recommend that you NOT enter a password for your ssh keys, but you may want to save them for later use. Remember that you can always mount your ~/.ssh/ directory using the '-v' flag when turning up your docker fed-dev container.*
 4. Change the values located in terra-deploy-only/variables.tf
 5. Run `terraform plan` to make sure everything is working correctly, then `terrafrom apply` to launch your Openstack Deployment.
 6. When finished, take the resulting IP addresses/names and add them to your /etc/hosts file (local in the fed-dev docker container).
