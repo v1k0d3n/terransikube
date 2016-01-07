@@ -4,7 +4,7 @@ This whole repo should be loaded within a fed-dev container located at: https://
 
 ### How to use Terransikube:
 1. Start a prebuilt container I created:
-  * `docker run -dit quay.io/v1k0d3n/fed-dev /bin/bash`
+  * `docker run -dit --name fed-dev quay.io/v1k0d3n/fed-dev /bin/bash`
   * `docker exec -it <container-id> bash`
 2. Clone this directory:
   * `git clone `
