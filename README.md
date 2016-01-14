@@ -8,7 +8,7 @@ This whole repo should be loaded within a fed-dev container located at: https://
   * `docker exec -it <container-id> bash`
   <br>**NOTE:** *When naming your container, consider declaring your deployment destination (e.g. "fed-dev-projectname").*
 2. Clone this directory:
-  * `git clone `
+  * `git clone https://github.com/v1k0d3n/terransikube.git`
 3. Create ssh keys in ~/.ssh/
    ````
    [root@fed-dev]# ssh-keygen -t rsa -b 4096 -C "user@domain.com"
