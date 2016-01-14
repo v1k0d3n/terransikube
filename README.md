@@ -6,7 +6,7 @@ This whole repo should be loaded within a fed-dev container located at: https://
 1. Start a prebuilt container I created:
   * `docker run -dit --name <fed-dev> quay.io/v1k0d3n/fed-dev /bin/bash`
   * `docker exec -it <container-id> bash`
-  <br>**NOTE:** *When naming your container, consider declaring your deployment destination (e.g. "fed-dev-projectname").*
+  <br>***NOTE:*** *When naming your container, consider declaring your deployment destination (e.g. "fed-dev-projectname").*
 2. Clone this directory:
   * `git clone https://github.com/v1k0d3n/terransikube.git`
 3. Create ssh keys in ~/.ssh/
@@ -15,13 +15,13 @@ This whole repo should be loaded within a fed-dev container located at: https://
    [root@fed-dev]# ssh-keygen -t rsa -b 4096 -C "user@domain.com"
    Enter file in which to save the key (/root/.ssh/id_rsa): /root/.ssh/terraform
    ```
-   
-   *NOTE: I recommend that you NOT enter a password for your ssh keys, but you may want to save them for later use. Remember that you can always mount your ~/.ssh/ directory using the '-v' flag when turning up your docker fed-dev container.*
+
+   ***NOTE:*** *I recommend that you NOT enter a password for your ssh keys, but you may want to save them for later use. Remember that you can always mount your ~/.ssh/ directory using the '-v' flag when turning up your docker fed-dev container.*
 4. Change the values located in terra-deploy-only/variables.tf
 5. Run `terraform plan` to make sure everything is working correctly, then `terrafrom apply` to launch your Openstack Deployment.
 6. When finished, take the resulting IP addresses/names and add them to your /etc/hosts file (local in the fed-dev docker container).
 7. Change directories to ../ansible-kube/.
-8. Change the values in `inventory.yaml`.
+8. Change the values in `inventory.ini`.
 9. Look over and change any nessisary variables in `../group_vars/all.yml`.
 10. Run `./setup -i inventory.yaml` in the `/ansible-kube` directory and that's it!
 
